@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
 import { useRouter } from 'expo-router';
 
-export default function SignIn({ navigation }) { // Ensure you accept navigation prop
+export default function SignIn({ navigation }) { 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome back.</Text>

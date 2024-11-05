@@ -6,27 +6,27 @@ import { useRouter } from 'expo-router';
 export default function Forgotpass() {
   const router = useRouter();
   
-  // State variables for the form inputs
+  
   const [emailOrPhone, setEmailOrPhone] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
 
-  // Function to handle the form submission
+  
   const handleSubmit = () => {
     if (newPassword === rePassword) {
-      // Logic to change the password (e.g., API call)
+      
       console.log("Password changed successfully for:", emailOrPhone);
-      // After successful change, you can navigate to another page or show a success message
+      
       router.push('/SignIn'); // Navigate back to Sign In page
     } else {
-      // Show error message (e.g., alert or state)
+      
       alert("Passwords do not match!");
     }
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Change Password</Text>
+      <Text style={styles.title}>Change Password!</Text>
 
       <View style={styles.form}>
         <TextInput

@@ -19,7 +19,7 @@ export default function Loginbutton() {
                 <Button 
                     style={{ backgroundColor: '#0A0A0A', marginVertical: 8, width: '80%' }}
                     mode="contained" 
-                    onPress={() => navigation.navigate('SignIn')} // Modify as needed for sign-in functionality
+                    onPress={() => navigation.navigate('SignIn')} 
                     labelStyle={{ color: '#E8CDB2', fontSize: 18 }}>
                     Sign In
                 </Button>
